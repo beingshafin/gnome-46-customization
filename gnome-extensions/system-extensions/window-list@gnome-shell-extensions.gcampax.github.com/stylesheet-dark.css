@@ -1,0 +1,116 @@
+/*
+ * SPDX-FileCopyrightText: 2012 Florian Müllner <fmuellner@gnome.org>
+ * SPDX-FileCopyrightText: 2013 Giovanni Campagna <gcampagna@src.gnome.org>
+ *
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
+.window-list {
+  spacing: 2px;
+  font-size: 10pt;
+}
+
+.bottom-panel {
+  background-color: #000000;
+  border-top-width: 0px;
+  height: 2.45em;
+}
+
+.window-button {
+  padding: 4px, 3px;
+}
+
+.window-button:first-child:ltr {
+  padding-left: 2px;
+}
+
+.window-button:last-child:rtl {
+  padding-right: 2px;
+}
+
+.window-button-box {
+  spacing: 4px;
+}
+
+.window-button > StWidget {
+  color: #bbb;
+  background-color: #1d1d1d;
+  border-radius: 4px;
+  padding: 3px 6px 1px;
+  transition: 100ms ease;
+}
+
+.window-button > StWidget {
+  -st-natural-width: 18.75em;
+  max-width: 18.75em;
+}
+
+.window-button:hover > StWidget {
+  color: #fff;
+  background-color: #303030;
+}
+
+.window-button:active > StWidget,
+.window-button:focus > StWidget {
+  color: #fff;
+  background-color: #3f3f3f;
+}
+
+.window-button.focused > StWidget {
+  color: #fff;
+  background-color: #3f3f3f;
+}
+
+.window-button.focused:active > StWidget {
+  color: #fff;
+  background-color: #3f3f3f;
+}
+
+.window-button.minimized > StWidget {
+  color: #666;
+  background-color: #161616;
+}
+
+.window-button.minimized:active > StWidget {
+  color: #666;
+  background-color: #161616;
+}
+
+.window-button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.window-list-workspace-indicator .status-label-bin {
+  background-color: rgba(200, 200, 200, 0.3);
+  padding: 5px;
+  margin: 3px;
+}
+
+.window-list-workspace-indicator .workspaces-box {
+  spacing: 3px;
+  padding: 5px;
+}
+
+.window-list-workspace-indicator .workspace {
+  width: 52px;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+}
+
+.window-list-workspace-indicator .workspace.active {
+  background-color: #3f3f3f;
+}
+
+.window-list-window-preview {
+  background-color: #bebebe;
+  border-radius: 1px;
+}
+
+.window-list-window-preview.active {
+  background-color: #d4d4d4;
+}
+
+.notification {
+  font-weight: normal;
+}

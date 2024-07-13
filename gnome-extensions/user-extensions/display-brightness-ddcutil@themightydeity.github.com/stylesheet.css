@@ -1,0 +1,9 @@
+.display-brightness-ddcutil-monitor-name-system-menu{
+    width: 60px;
+    overflow: none;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.display-brightness-ddcutil-monitor-slider-bin-system-menu {
+    min-height: 16px;
+}
