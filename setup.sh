@@ -99,7 +99,7 @@ run_command sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 
 #12 Wallpaper
-run-command mkdir -p ${HOME}/Pictures/wallpapers
+run_command mkdir -p ${HOME}/Pictures/wallpapers
 run_command cp -r ${HOME}/.g46c@shafin/wallpapers/* ${HOME}/Pictures/wallpapers
 run_command gsettings set org.gnome.desktop.background picture-uri 'file:///${HOME}/Pictures/wallpapers/03-g46caw.jpg'
 run_command gsettings set org.gnome.desktop.background picture-uri-dark 'file:///${HOME}/Pictures/wallpapers/03-g46caw.jpg'
