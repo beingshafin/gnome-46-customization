@@ -78,11 +78,12 @@ run_command gsettings set org.gnome.shell.extensions.user-theme name "Marble-gra
 
 #09 GTK theme
 run_command cd ${HOME}/.g46c@resources
-run_command rm -rf ./dracula-gtk && ${HOME}/.themes/dracula-gtk
+run_command sudo rm -rf ./dracula-gtk
+run_command sudo rm -rf ${HOME}/.themes/dracula-gtk
 run_command git clone https://github.com/dracula/gtk.git dracula-gtk
 run_command sudo cp -r dracula-gtk ${HOME}/.themes/
-run_command gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
-run_command gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+run_command gsettings set org.gnome.desktop.interface gtk-theme "dracula-gtk"
+run_command gsettings set org.gnome.desktop.wm.preferences theme "dracula-gtk"
 
 #10 Icons
 run_command cd ${HOME}/.g46c@resources
@@ -167,7 +168,7 @@ run_command yay -Scc --noconfirm
 run_command sudo pacman -Rns --noconfirm gnome-console
 
 #24 Congratulations
-run_command firefox ${HOME}/.g46c@shafin/.extras/Congratulations.pdf
+run_command firefox https://spurious-turner-259.notion.site/Congratulations-2b08d727d33c4627a082341dc0bc1718?pvs=4
 
 echo "Installation completed successfully! Please Log Out --beingshafin@github"
 
