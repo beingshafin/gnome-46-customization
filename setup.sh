@@ -99,7 +99,7 @@ run_command sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 
 #12 Wallpaper
-run-command mkdir -p ${HOMME}/Pictures/wallpapers
+run-command mkdir -p ${HOME}/Pictures/wallpapers
 run_command cp -r ${HOME}/.g46c@shafin/wallpapers/* ${HOME}/Pictures/wallpapers
 run_command gsettings set org.gnome.desktop.background picture-uri 'file:///${HOME}/Pictures/wallpapers/03-g46caw.jpg'
 run_command gsettings set org.gnome.desktop.background picture-uri-dark 'file:///${HOME}/Pictures/wallpapers/03-g46caw.jpg'
@@ -149,7 +149,7 @@ run_command cp ${HOME}/.g46c@shafin/config/startup.sh.desktop ${HOME}/.config/au
 
 #19 Brightness slider with ddcutil
 run_command sudo modprobe i2c-dev
-run_command yay -S ddcutil-git --needed
+run_command yay -S ddcutil-git --needed --noconfirm
 run_command ddcutil capabilities | grep "Feature: 10"
 run_command sudo cp /usr/share/ddcutil/data/60-ddcutil-i2c.rules /etc/udev/rules.d
 run_command sudo groupadd --system i2c
