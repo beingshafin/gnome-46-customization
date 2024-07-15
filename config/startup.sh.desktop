@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/shafin/.myscripts/startup.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Custom Startup Script
+Comment=Run custom startup script to launch and manage applications
+
