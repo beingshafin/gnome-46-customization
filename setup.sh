@@ -16,7 +16,7 @@ run_command() {
 
 
 #Setting up download resource folder
-mkdir ${HOME}/.g46c@resources
+run_command mkdir ${HOME}/.g46c@resources
 
 #01 Configuring mirrorlist
 run_command sudo cp ${HOME}/.g46c@shafin/config/mirrorlist /etc/pacman.d/mirrorlist
@@ -120,10 +120,10 @@ run_command ./setup.sh
 run_command cp ${HOME}/.g46c@shafin/config/synth-shell-prompt.config ${HOME}/.config/synth-shell/
 run_command mv ${HOME}/.bashrc ${HOME}/.bashrc-synthog.bak
 run_command cp ${HOME}/.g46c@shafin/config/.bashrc ${HOME}/
-source ${HOME}/.bashrc
+run_command source ${HOME}/.bashrc
 
 #16 GNOME Nautilus transparency
-echo "/* Transparent Sidebar */
+run_command echo "/* Transparent Sidebar */
 window {
   background: alpha(@window_bg_color, 0.7);
 }
@@ -170,5 +170,4 @@ run_command sudo pacman -Rns --noconfirm gnome-console
 #24 Congratulations
 run_command firefox https://spurious-turner-259.notion.site/Congratulations-2b08d727d33c4627a082341dc0bc1718?pvs=4
 
-echo "Installation completed successfully! Please Log Out --beingshafin@github"
-
+run_command echo "Installation completed successfully! Please Log Out --beingshafin@github"
